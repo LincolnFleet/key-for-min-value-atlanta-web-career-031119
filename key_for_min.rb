@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash.length<1
     return nil
   else
-    temp_smallest=1/0
+    temp_smallest=1.0/0
     min_key=""
     i=0
     while i<name_hash.length
