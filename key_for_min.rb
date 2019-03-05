@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     min_key=""
     i=0
     while i<name_hash.length
-      name_hash.each {|key, value| if value<temp_smallest[1]; temp_smallest=[key, value]; min_key=key end}
+      name_hash.each {|key, value| if value<temp_smallest; temp_smallest=value; min_key=key end}
       i+=1
     end
   end
